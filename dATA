@@ -1,0 +1,43 @@
+You are a senior brand designer and front-end developer. Build a complete, production-quality, single-brand coffee website for a FICTIONAL specialty coffee roaster called "Hearth & Hush Coffee Roasters". Make it original: do not copy any existing coffee brand, template or layout. Use only fictional data.
+
+AUDIENCE
+Primary: university students and young professionals (ages 18-35) in a city, who love specialty coffee, study/work in cafés, and want a calm, premium but affordable experience.
+Primary task: discover a coffee that suits them and order it (add to cart).
+
+BRAND & THEME
+- Mood: "slow mornings, warm light" - cozy, premium, calm. Dark espresso background sections alternating with warm cream sections.
+- Color tokens (CSS variables): espresso #1E1410, roast #3B2418, crema #F4E9D8, oat #E7D5B8, copper accent #C46A2B, sage #7C8B6F for small highlights. Ensure WCAG AA text contrast.
+- Fonts (Google Fonts): headings "Fraunces" (serif, weights 600-800), body "DM Sans" (400/500), small labels "DM Mono". Large expressive hero type, generous spacing, consistent 8px spacing scale, rounded 16px cards, subtle grain texture overlay.
+- Logo: simple original wordmark with a small steam/leaf icon (SVG). No copied logos.
+
+PAGES / SECTIONS (single page with smooth scrolling + sticky navbar)
+1. Hero: full-screen coffee imagery with parallax, headline "Slow down. Sip loud.", short subtext, ONE clear call-to-action "Find your brew". Three-step strip underneath: 1) Take the 30-second quiz 2) Get your match 3) Order fresh beans.
+2. Brew Finder (main interactive feature): 3-question quiz (taste: fruity/chocolatey/nutty; method: espresso/pour-over/French press/cold brew; strength: light/medium/bold). Show an animated result card with the recommended coffee, flavor notes, and an "Add to cart" button.
+3. Our Coffees: product grid of 8 fictional coffees with filter chips (Light / Medium / Dark / Cold Brew) and sort by price. Each card: image, origin, tasting notes, price, 250g/1kg size toggle, add-to-cart. Clicking opens an interactive product showcase modal with a rotating/zoom image, flavor-wheel bars, and brewing tips.
+4. Cart drawer: add/remove, quantity, live subtotal, toast feedback ("Added to cart"). Checkout is a fictional demo - no real payment or personal info fields.
+5. Our Story: scroll-reveal timeline (farm -> roast -> cup) with parallax images and animated counters (farmers supported, kg roasted, cafés served).
+6. Menu: tabbed café menu (Hot / Cold / Bites) with prices.
+7. Visit Us: store info for 2 fictional locations, opening hours with "Open now" status computed from current time, embedded map placeholder, and a simple reservation/contact form with validation and success message.
+8. Footer: social icons, newsletter input (demo only), and credits (see below).
+
+INTERACTIONS & MOTION
+Smooth scroll, scroll-reveal animations (IntersectionObserver), parallax hero, hover/focus states on all controls, page-load fade, steam animation on hero cup, respect prefers-reduced-motion. All buttons and filters must actually work, no dead links.
+
+IMAGES
+Use warm, high-quality coffee photography (beans, pour-over, latte art, café interior, hands holding cups, coffee farm). Use royalty-free sources (Unsplash/Pexels) or AI-generated images that we own, with descriptive alt text, lazy loading, and an "Image credits" list in the footer.
+
+ACCESSIBILITY & RESPONSIVE
+Mobile-first (test at 360px, 768px, 1280px). Hamburger menu on mobile, readable text (min 16px body), visible keyboard focus, semantic HTML (header/nav/main/section/footer), aria-labels for icon buttons, alt text on every image.
+
+TECH
+Plain HTML + CSS + vanilla JavaScript (or React + Tailwind if the tool prefers), clean folder structure, commented code, no external dependencies besides Google Fonts and an icon set. Store cart in memory/localStorage with try/catch.
+
+README.md (include)
+Project name, audience, main task, features, tools used (AI tools and what they generated vs. what we changed), how to run, deployment link, image/font credits, and a note that all data is fictional.
+
+FOOTER CREDITS (must appear at the bottom of the website)
+"Designed & developed by
+Farheen Noor - FA26-BSCS-0105
+Fizza Batul - FA26-BSCS-0101"
+
+Before finishing, self-check: Does every button work? Is the layout clean on mobile? Is contrast readable? Is nothing copied from an existing site?
